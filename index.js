@@ -1,4 +1,4 @@
-function sum(a, b) {
-    return a + b;
+function sortArrAsc(arr) {
+    return arr.sort()
   }
-  module.exports = sum;
+  module.exports = sortArrAsc;
