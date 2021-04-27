@@ -1,14 +1,17 @@
 const sortArrAsc = require('./index');
 test('adds 1 + 2 to equal 3', () => {
-    expect(sortArrAsc([1,2,3,4])).toEqual([1,2,3,4]);
+    expect(2+2).toEqual(4);
     expect(true).toBeTruthy();
   });
 
-describe('Test converting Arabic numbers to Roman numerals', () => {
-    it('should convert 1 to I', () => {
+describe('Sorting Array', () => {
+    it('keep array', () => {
         expect(sortArrAsc([1,2,3,4])).toEqual([1,2,3,4]);
     });
-    it('should convert 2 to II', () => {
+    it('order letters', () => {
         expect(sortArrAsc(['a','c','b'])).toEqual(['a','b','c']);
+    });
+    it('sort number array', () => {
+        expect(sortArrAsc([1,5,7,4])).toEqual([1,4,5,7]);
     });
 });
