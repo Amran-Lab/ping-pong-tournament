@@ -3,6 +3,6 @@ function sortArrAsc(arr) {
   }
 
   function multiplyArray(arr) {
-    return arr * 2
+    return arr.map((x) => {return x*2} );
   }
-  module.exports = sortArrAsc;
+  module.exports = { sortArrAsc, multiplyArray };

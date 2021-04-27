@@ -15,10 +15,13 @@ describe('Sorting Array', () => {
     it('sort number array', () => {
         expect(sortArrAsc([1,5,7,4])).toEqual([1,4,5,7]);
     });
+    it('sort number array', () => {
+        expect(sortArrAsc([])).toEqual([]);
+    });
 });
 
 describe('operations on array', () => {
     it('multiply array', () => {
-        expect(multiplyArray([1,2,3,4])).toEqual([2,4,9,16]);
+        expect(multiplyArray([1,2,3,4])).toEqual([2,4,6,8]);
     });   
-});
+})
