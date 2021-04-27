@@ -1,11 +1,4 @@
-const { numToRoman } = require('./index')
-
-
-describe('Test converting Arabic numbers to Roman numerals', () => {
-    describe('Converts numbers 1-3', () => {
-        it('Smoke', () => {
-            expect(I).toEqual('I');
-        });
-
-})
-})
+const sum = require('./index');
+test('adds 1 + 2 to equal 3', () => {
+    expect(sum(1, 2)).toBe(3);
+  });
